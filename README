@@ -1,0 +1,8 @@
+This is a copy of the "Composite Builds Plugin Development Sample" from Gradle 6.5.1.
+
+You should be able to run "gradlew greeting" and see "Hi Bob!" as output. 
+
+This project differs from the sample in that I added a dependency to the greeting-plugin that is NOT present on the "gradlePluginPortal()" repository. It appears the buildscript using the plugin is trying to find the dependency for the plugin in use. 
+
+If you uncomment line 7 (specifying the jitpack.io repository), the task will be able to run. 
+
